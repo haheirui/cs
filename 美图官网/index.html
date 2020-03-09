@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+
+  <!-- 比例缩放设置 -->
+  <!-- width=device-width: 视口宽度等于设备宽度 -->
+  <!-- initial-scale=1：初始比例 -->
+  <!-- user-scalable=no： 禁止用户缩放（双手指进行放大缩小） -->
+  <!-- maximum-scale=1：最大缩放 -->
+  <!-- minimum-scale=1: 最小缩放 -->
+  <!-- user-scalable=no： iphone真机无效，在安卓手机有效 -->
+  <!-- shrink-to-fit=no：禁止在iphone真机缩放，iphone6 plus 测试无效 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+  <!-- 字体图标样式 -->
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+
+  <!-- 自定义页面的css -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <title>美图官网</title>
+</head>
+<body>
+<div class="container-fluid px-0">
+<!--  导航条-->
+  <div class="row w-100 px-0 px-0 mx-0">
+    <div class="col-12 nav-bg px-0">
+      <div class="nav-content h-100">
+        <div class="col-2 h-100 float-left">
+          <div class="bg-logo"></div>
+        </div>
+        <div class="col-8 h-100 float-left">
+          <div class="col-20 h-100 float-left text-center"><span class="cursor-p">手机</span></div>
+          <div class="col-20 h-100 float-left text-center"><span class="cursor-p">美容仪器</span></div>
+          <div class="col-20 h-100 float-left text-center"><span class="cursor-p">配件</span></div>
+          <div class="col-20 h-100 float-left text-center"><span class="cursor-p">服务支持</span></div>
+          <div class="col-20 h-100 float-left text-center"><span class="cursor-p">企业网站</span></div>
+        </div>
+        <div class="col-2 h-100 float-left">
+          <div class="soushuo float-left cursor-p" data-toggle="modal" data-target="#exampleModal"></div>
+          <div class="login float-right cursor-p"></div>
+          <div class="jiantou"></div>
+        </div>
+      </div>
+    </div>
+<!--隐藏导航条（768px）-->
+    <div class="col-12 w-100 nav-bg1 px-0 text-light text-center">
+      <div class="float-left col-1 px-0 h-100"><i class="fa fa-bars" aria-hidden="true"></i></div>
+      <div class="float-left col-10 px-0 h-100"><span class="d-inline-block span-title"></span></div>
+      <div class="float-left col-1 px-0 h-100"><span class="login d-inline-block cursor-p"></span></div>
+    </div>
+  </div>
+<!--  模态框-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bg-black">
+        <div class="modal-header border-0">
+          <div class="soushuo2 float-left cursor-p"></div>
+          <input type="text" class="bg-black border-0 w-75 text-white" placeholder="搜索 Meitu.com">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="text-light">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body px-0">
+          <p class="ptitle text-white-50">快速链接</p>
+          <p class="ptitle border-bottom pb-3 cursor-p">配件</p>
+          <p class="ptitle cursor-p">售后维修网点</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  登录-->
+  <div class="login-bg login-padding">
+    <p class="p-color text-center mb-0 border-bottom pw-100">你的购物车是空的</p>
+    <div class="h-50 border-bottom">
+      <a href="#" class="w-100 h-100 d-block text-body">
+        <i class="fa fa-shopping-bag"></i><span class="ml-3 span-font">购物袋</span>
+      </a>
+    </div>
+    <div class="h-50 border-bottom">
+      <a href="#" class="w-100 h-100 d-block text-body">
+        <i class="fa fa-calendar-check-o"></i><span class="ml-3 span-font">我的预约</span>
+      </a>
+    </div>
+    <div class="h-50 border-bottom">
+      <a href="#" class="w-100 h-100 d-block text-body">
+        <i class="fa fa-list-alt"></i><span class="ml-3 span-font">我的订单</span>
+      </a>
+    </div>
+    <div class="h-50 border-bottom">
+      <a href="#" class="w-100 h-100 d-block text-body">
+        <i class="fa fa-object-group"></i><span class="ml-3 span-font">以旧换新订单</span>
+      </a>
+    </div>
+    <div class="h-50 border-bottom">
+      <a href="#" class="w-100 h-100 d-block text-body">
+        <i class="fa fa-money"></i><span class="ml-3 span-font">优惠卷</span>
+      </a>
+    </div>
+    <div class="h-50 border-bottom">
+      <a href="#" class="w-100 h-100 d-block text-body">
+        <i class="fa fa-scribd"></i><span class="ml-3 span-font">S码通道</span>
+      </a>
+    </div>
+    <div class="h-50">
+      <a href="#" class="w-100 h-100 d-block text-body">
+        <i class="fa fa-user-circle-o"></i><span class="ml-3 span-font">登录</span>
+      </a>
+    </div>
+    <div class="jiantou1"></div>
+  </div>
+<!--  轮播图-->
+  <div class="row w-100 px-0 mx-0 lunbo1">
+    <div class="col-12 px-0 mx-0">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active over-x">
+            <img src="img/lunbo.jpg" class="d-block w-100 h-670 " alt="...">
+            <div class="bg5-text">
+              <div class="bg5"></div>
+              <div class="bg-text">美图旗舰店4+64G仅售1099元︱立即前往 ></div>
+            </div>
+          </div>
+          <div class="carousel-item over-x">
+            <img src="img/lunbo.jpg" class="d-block w-100 h-670" alt="...">
+            <div class="bg5-text">
+              <div class="bg5"></div>
+              <div class="bg-text">美图旗舰店4+64G仅售1099元︱立即前往 ></div>
+            </div>
+          </div>
+          <div class="carousel-item over-x">
+            <img src="img/lunbo.jpg" class="d-block w-100 h-670" alt="...">
+            <div class="bg5-text">
+              <div class="bg5"></div>
+              <div class="bg-text">美图旗舰店4+64G仅售1099元︱立即前往 ></div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row w-100 px-0 mx-0 d-none lunbo2">
+    <div class="col-12 px-0 mx-0">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active over-x">
+            <img src="img/lunbo2.jpg" class="d-block w-100 h-824 " alt="...">
+            <div class="bg5-text1">
+              <div class="bg51"></div>
+              <div class="bg-text1">美图旗舰店4+64G仅售1099元︱立即前往 ></div>
+            </div>
+          </div>
+          <div class="carousel-item over-x">
+            <img src="img/lunbo2.jpg" class="d-block w-100 h-824" alt="...">
+            <div class="bg5-text1">
+              <div class="bg51"></div>
+              <div class="bg-text1">美图旗舰店4+64G仅售1099元︱立即前往 ></div>
+            </div>
+          </div>
+          <div class="carousel-item over-x">
+            <img src="img/lunbo2.jpg" class="d-block w-100 h-824" alt="...">
+            <div class="bg5-text1">
+              <div class="bg51"></div>
+              <div class="bg-text1">美图旗舰店4+64G仅售1099元︱立即前往 ></div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+<!--  四张图-->
+  <div class="row py-1 w-100 px-0 mx-0">
+    <div class="col-xl-3 col-sm-6 px-1 overflow-hidden">
+      <img src="img/bg1.jpg" alt="" class="w-100 hover-s">
+    </div>
+    <div class="col-xl-3 col-sm-6 px-1 imgw-100 overflow-hidden">
+      <img src="img/bg2.jpg" alt="" class="w-100 hover-s">
+    </div>
+    <div class="col-xl-3 col-sm-6 px-1 pt-1 pt-xl-0 overflow-hidden">
+      <img src="img/bg3.jpg" alt="" class="w-100 hover-s">
+    </div>
+    <div class="col-xl-3 col-sm-6 px-1 pt-1 pt-xl-0 overflow-hidden">
+      <img src="img/bg4.jpg" alt="" class="w-100 hover-s">
+    </div>
+  </div>
+<!--  页脚-->
+  <div class="row pt-5 footer-bg w-100 mx-0">
+    <div class="w-1200">
+      <div class="footer-inner float-left col-md-8 px-0">
+        <div class="footcol-20 float-left">
+          <div class="one-title borderfoot">选购及了解<span class="jia d-md-none d-inline-block float-right w-90 text-right">+</span></div>
+          <div class="one-inner d-md-block">
+            <div class="one pt-2"><span>美图V7</span></div>
+            <div class="one"><span>美图T9</span></div>
+            <div class="one"><span>美图V6</span></div>
+            <div class="one"><span>美图M8s</span></div>
+            <div class="one"><span>配件</span></div>
+            <div class="one"><span>更多美图手机</span></div>
+          </div>
+
+        </div>
+        <div class="footcol-20 float-left">
+          <div class="one-title borderfoot">购物帮助<span class="jia d-md-none d-inline-block float-right w-90 text-right">+</span></div>
+          <div class="one-inner d-md-block">
+            <div class="one pt-2"><span>发货及配送</span></div>
+            <div class="one"><span>订单相关</span></div>
+            <div class="one"><span>支付方式</span></div>
+            <div class="one"><span>帐号相关</span></div>
+            <div class="one"><span>相关政策</span></div>
+          </div>
+
+        </div>
+        <div class="footcol-20 float-left">
+          <div class="one-title borderfoot">服务支持<span class="jia d-md-none d-inline-block float-right w-90 text-right">+</span></div>
+          <div class="one-inner d-md-block">
+            <div class="one pt-2"><span>预置应用公示</span></div>
+            <div class="one"><span>售后流程</span></div>
+            <div class="one"><span>售后服务政策</span></div>
+            <div class="one"><span>服务网点</span></div>
+            <div class="one"><span>寻找美图手机</span></div>
+            <div class="one"><span>问题反馈</span></div>
+          </div>
+
+        </div>
+        <div class="footcol-20 float-left">
+          <div class="one-title borderfoot">美图APP<span class="jia d-md-none d-inline-block float-right w-90 text-right">+</span></div>
+          <div class="one-inner d-md-block">
+            <div class="one pt-2"><span>美图秀秀</span></div>
+            <div class="one"><span>美颜相机</span></div>
+            <div class="one"><span>美拍</span></div>
+            <div class="one"><span>美图宜肤</span></div>
+            <div class="one"><span>美图魔镜</span></div>
+            <div class="one"><span>了解更多产品</span></div>
+          </div>
+
+        </div>
+        <div class="footcol-20 float-left">
+          <div class="one-title borderfoot lastfoot">关于美图<span class="jia d-md-none d-inline-block float-right w-90 text-right">+</span></div>
+          <div class="one-inner d-md-block">
+            <div class="one pt-2"><span>了解美图</span></div>
+            <div class="one"><span>美图资讯</span></div>
+            <div class="one"><span>投资者关系</span></div>
+            <div class="one"><span>文化和价值观</span></div>
+            <div class="one"><span>工作机会</span></div>
+            <div class="one"><span>联系美图</span></div>
+          </div>
+
+        </div>
+      </div>
+      <div class="footcol-201 float-md-right col-md-4 px-0 pl-md-4 pl-sm-2">
+        <div class="two">客服工作时间&nbsp;&nbsp;&nbsp;周一至周日&nbsp;&nbsp;&nbsp;9:00&nbsp;-&nbsp;18:00</div>
+        <div class="three">400-990-9696</div>
+        <div class="two"><span>在线客服 </span>></div>
+      </div>
+    </div>
+    <div class="pl-footer">
+      <div class="py-4">
+        <div class="font-12">
+          <span>© 2020</span>
+          <span>隐私政策</span>
+          <span>使用条款</span>
+          <span>销售政策</span>
+          <span>法律声明</span>
+          <span>广告投放</span>
+          <span>廉政建设</span>
+          <span class="float-right mx-2 color-999">中国</span>
+          <span class="span-bg1 d-inline-block float-right mr-0"></span>
+        </div>
+        <div class="font-12 color-999">
+          <span>闽公网安备 35020302000186号</span>,
+          <span>闽ICP证B2-20040192</span>,
+          <span>闽网文(2018)8421-380号</span>,
+          <span>违法和不良信息举报电话：400-990-9696</span>
+          <span class="span-bg d-inline-block"></span>
+        </div>
+        <div class="color-999">
+          <span>厦门美图网科技有限公司 客服电话：0592-5919017</span>
+        </div>
+        <div class="font-12 color-999">
+          <span>互联网药品信息服务资格证书（闽）-非经营性-2018-0058</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="./bootstrap/js/jquery-3.4.1.min.js"></script>
+<script src="./bootstrap/js/popper.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

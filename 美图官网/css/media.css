@@ -1,0 +1,35 @@
+@media screen and (min-width: 1440px){
+    .login-bg{right: 8%;}
+    .h-670{height: 600px;}
+}
+@media screen and (max-width: 1440px){
+    .login-bg{right: 10px;}
+    .h-670{height: 600px;}
+}
+@media screen and (max-width: 1340px){
+    .login-bg{right: 10px;}
+}
+@media screen and (max-width: 575px){
+    .imgw-100{padding-top: 4px;}
+}
+@media screen and (max-width: 768px){
+    /*.h-670{height: 750px;}*/
+    .login-bg{width: 100%;right: 0;top: 48px;}
+    .jiantou1{width: 10px;height: 10px;background: white;position: absolute;top: -5px;right: 3.4%;transform: rotate(45deg);display: block;}
+    .pw-100{width: 100%;}
+    .nav-bg{display: none;}
+    .nav-bg1{display: block;height: 48px;background: #000;line-height: 48px;}
+    .nav-bg1 i{font-size: 22px;cursor: pointer;}
+    .lunbo1{display: none;}
+    .lunbo2{display: block!important;}
+    .footer-inner{width: 100%}
+    .footcol-20{width: 100%;}
+    .w-1200{padding-left: 20px;width: 100%;padding-right: 20px;}
+    .footer-inner{width: 100%;z-index: 1;}
+    .one-inner{width: 100%;display: none;}
+    .borderfoot{border-bottom: 1px solid #cccccc;}
+    .lastfoot{margin-bottom: 20px;}
+    .jia{font-size: 20px;}
+    .w-90{width: 80%;}
+
+}
